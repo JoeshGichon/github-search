@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { GithubSearchService } from '../github-search.service';
+
 @Component({
   selector: 'app-github-search',
   templateUrl: './github-search.component.html',
@@ -8,7 +10,21 @@ import { Component, OnInit } from '@angular/core';
 export class GithubSearchComponent implements OnInit {
 
   public githubUserQuery:string;
-  constructor() { }
+  public githubPrrofile:any;
+  public githubRepositories:any[];
+  public errorMessage:string;
+
+  constructor(private githubSearchService:GithubSearchService) { }
+
+  public searchUser(){
+    this.githubSearchService.getProfile(this.githubUserQuery).subscribe((data)=>{
+      this.githubPrrofile = data
+    });
+
+    this.githubSearchService.getRepositories(this.githubUserQuery).subscribe((data)=>{
+      this.githubRepositories=data
+    })
+  }
 
   ngOnInit(): void {
   }

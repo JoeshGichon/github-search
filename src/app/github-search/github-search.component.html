@@ -4,10 +4,13 @@
             <h1>Github User Search</h1>
         </div>
         <div>
-            <form >
+            <form (submit)="searchUser()">
                 <input [(ngModel)]="githubUserQuery" name="user" type="search" placeholder="github user">
-                <input type="submit" value="submit">
+                <input type="submit" value="search">
             </form>
         </div>
+    </div>
+    <div>
+        <pre>{{githubPrrofile|json}}</pre>
     </div>
 </section>
