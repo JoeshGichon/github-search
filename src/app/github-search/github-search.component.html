@@ -11,6 +11,10 @@
         </div>
     </div>
     <div>
-        <pre>{{githubPrrofile|json}}</pre>
+        <app-github-search-profile [githubPrrofile]="githubPrrofile">
+        </app-github-search-profile>
+    </div>
+    <div>
+        <app-github-search-repositories></app-github-search-repositories>
     </div>
 </section>
