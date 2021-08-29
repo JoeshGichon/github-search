@@ -1,5 +1,29 @@
 <section class="container">
     <div class="row">
-        
+        <span>{{githubPrrofile.followers}}Followers</span>
+        <span>{{githubPrrofile.following}}Following</span>
+        <span>{{githubPrrofile.public_repos}}Repositories</span>
+    </div>
+    <div class="row">
+        <ul>
+            <li>
+                User Name:{{githubPrrofile.login}}
+            </li>
+            <li>
+                Location:{{githubPrrofile.location}}
+            </li>
+            <li>
+                Email:{{githubPrrofile.email}}
+            </li>
+            <li>
+                Company:{{githubPrrofile.company}}
+            </li>
+            <li>
+                Members Since:{{githubPrrofile.created_at|date}}
+            </li>
+            <li>
+                Profile URL:<a [href]="githubPrrofile.html_url" target="_blank">{{githubPrrofile.html_url}}</a>
+            </li>
+        </ul>
     </div>
 </section>
