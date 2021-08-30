@@ -1,0 +1,19 @@
+li{
+    list-style: none;
+}
+nav{
+    background-color: rgb(92, 86, 86);
+    opacity: .9;
+}
+nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+nav div{
+    display: inline-block;
+}
+nav div li{
+    padding: 10px;
+}
+
