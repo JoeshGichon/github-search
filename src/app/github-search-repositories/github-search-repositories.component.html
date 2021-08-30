@@ -1,1 +1,13 @@
-<p>github-search-repositories works!</p>
+<section class="container">
+    <div>
+        <h2>Github Repositories</h2>
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let repos of githubRepositories">
+                <a >{{repos.name}}</a>
+                <span>Stars</span>
+            </li>
+        </ul>
+    </div>
+</section>

@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { environment } from "../environments/environment"
 import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +19,7 @@ export class GithubSearchService {
 
   // getting github repositories
   public getRepositories(searchQuery):Observable<any[]>{
-    let dataURL = `https://api.github.com/users/repos${searchQuery}?${environment.clientId}&${environment.clientSecret}`;
+    let dataURL = `https://api.github.com/users/${searchQuery}/repos?${environment.clientId}&${environment.clientSecret}`;
 
     return this.httpClient.get<any[]>(dataURL)
   }

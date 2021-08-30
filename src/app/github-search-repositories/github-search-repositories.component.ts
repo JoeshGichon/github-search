@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-github-search-repositories',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubSearchRepositoriesComponent implements OnInit {
 
+  @Input() githubRepositories:any[];
   constructor() { }
 
   ngOnInit(): void {

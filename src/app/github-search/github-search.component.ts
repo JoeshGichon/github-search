@@ -19,10 +19,12 @@ export class GithubSearchComponent implements OnInit {
   public searchUser(){
     this.githubSearchService.getProfile(this.githubUserQuery).subscribe((data)=>{
       this.githubPrrofile = data
+      console.log(this.githubPrrofile)
     });
 
     this.githubSearchService.getRepositories(this.githubUserQuery).subscribe((data)=>{
       this.githubRepositories=data
+      console.log(this.githubRepositories)
     })
   }
 
