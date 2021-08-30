@@ -6,8 +6,11 @@
         <ng-progress></ng-progress>
         <div>
             <form (submit)="searchUser()">
-                <input [(ngModel)]="githubUserQuery" name="user" type="text" placeholder="github user">
-                <input type="submit" value="search">
+                <div>
+                    <input id="user-input" class="form-control" [(ngModel)]="githubUserQuery" name="user" type="text" placeholder="github user-name">
+
+                    <input type="submit" value="search" class="btn btn-success">
+                </div> 
             </form>
         </div>
     </div>
