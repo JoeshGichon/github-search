@@ -1,10 +1,13 @@
-<div *ngIf="githubPrrofile" class="container">
-    <div class="row">
-        <div>
-            <app-github-search-profile-pic [githubPrrofile]="githubPrrofile"></app-github-search-profile-pic>
-        </div>
-        <div>
-            <app-github-search-profile-description [githubPrrofile]="githubPrrofile"></app-github-search-profile-description>
+<section>
+    <div *ngIf="githubPrrofile" class="container">
+        <div class="row">
+            <div id="profile-picture" class="col-lg-6 col-md-6">
+                <app-github-search-profile-pic [githubPrrofile]="githubPrrofile"></app-github-search-profile-pic>
+            </div>
+            <div id="profile-description" class="col-lg-6 col-md-6">
+                <app-github-search-profile-description [githubPrrofile]="githubPrrofile"></app-github-search-profile-description>
+            </div>
         </div>
     </div>
-</div>
+</section>
+
