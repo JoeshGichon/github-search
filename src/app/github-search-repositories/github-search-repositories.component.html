@@ -1,12 +1,13 @@
-<section class="container">
+<section *ngIf="githubRepositories" class="container">
     <div>
         <h2>Github Repositories</h2>
     </div>
     <div>
         <ul>
             <li *ngFor="let repos of githubRepositories">
-                <a >{{repos.name}}</a>
-                <span>Stars</span>
+                <a [href]="repos.html_url" target="_blank">{{repos.name}}</a>
+                <span>{{repos.stargazers_count}}</span>
+                <span>{{repos.watchers_count}}</span>
             </li>
         </ul>
     </div>

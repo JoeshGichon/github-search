@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 import { GithubSearchService } from '../github-search.service';
 
 @Component({
@@ -14,18 +15,23 @@ export class GithubSearchComponent implements OnInit {
   public githubRepositories:any[];
   public errorMessage:string;
 
-  constructor(private githubSearchService:GithubSearchService) { }
+  constructor(private githubSearchService:GithubSearchService,) { }
+  
 
   public searchUser(){
+    // this.ngxSpinnerService.show();
+
     this.githubSearchService.getProfile(this.githubUserQuery).subscribe((data)=>{
       this.githubPrrofile = data
-      console.log(this.githubPrrofile)
+      console.log(this.githubPrrofile);
     });
 
     this.githubSearchService.getRepositories(this.githubUserQuery).subscribe((data)=>{
       this.githubRepositories=data
       console.log(this.githubRepositories)
     })
+
+    // this.ngxSpinnerService.hide();
   }
 
   ngOnInit(): void {
