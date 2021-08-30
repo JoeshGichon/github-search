@@ -1,4 +1,4 @@
-# Project Name
+<!-- # Project Name
 Github search Application.
 
 # By: **John Gicho**
@@ -37,7 +37,7 @@ Also my mobile contact is as follows:
 
 ### License
 *MIT License*
-Copyright (c) 2021 **John_Gicho**
+Copyright (c) 2021 **John_Gicho** -->
 
 
 
