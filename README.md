@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
+# By: **John Gicho**
+
+## Project Description
+The github search project enables user to search github users as well as repositories by providing an input where user can type github user name. The application searches github server through an api and renders the github user profile as well as user repositories. 
+
+## Project Link
+Below is the project deployed link
+
+https://joeshgichon.github.io/github-search/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
