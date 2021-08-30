@@ -19,7 +19,10 @@ export class GithubSearchComponent implements OnInit {
   
 
   public searchUser(){
-    // this.ngxSpinnerService.show();
+    if(this.githubUserQuery===undefined || this.githubUserQuery==""){
+      alert("user Input field is required");
+      return
+    }
 
     this.githubSearchService.getProfile(this.githubUserQuery).subscribe((data)=>{
       this.githubPrrofile = data
