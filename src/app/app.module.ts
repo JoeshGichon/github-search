@@ -15,6 +15,7 @@ import { GithubSearchProfileComponent } from './github-search-profile/github-sea
 import { GithubSearchProfilePicComponent } from './github-search-profile-pic/github-search-profile-pic.component';
 import { GithubSearchProfileDescriptionComponent } from './github-search-profile-description/github-search-profile-description.component';
 import { GithubSearchRepositoriesComponent } from './github-search-repositories/github-search-repositories.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GithubSearchRepositoriesComponent } from './github-search-repositories/
     GithubSearchProfileComponent,
     GithubSearchProfilePicComponent,
     GithubSearchProfileDescriptionComponent,
-    GithubSearchRepositoriesComponent
+    GithubSearchRepositoriesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
