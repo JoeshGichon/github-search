@@ -1,15 +1,10 @@
-# Github Search
+# Project Name
+Github search Application.
 
-# By **John Gicho**
+# By: **John Gicho**
 
 ## Project Description
 The github search project enables user to search github users as well as repositories by providing an input where user can type github user name. The application searches github server through an api and renders the github user profile as well as user repositories. 
-
-## Project Link
-Below is the project deployed link
-
-https://joeshgichon.github.io/github-search/
-
 
 # Setup/Installation Requirements
 * HTML
@@ -38,10 +33,8 @@ Also my mobile contact is as follows:
 *MIT License*
 Copyright (c) 2021 **John_Gicho**
 
-# Project Name
-Github search Application.
 
-# By: **John Gicho**
+
 
 
 
