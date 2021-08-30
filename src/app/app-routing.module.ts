@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GithubSearchProfileComponent } from './github-search-profile/github-search-profile.component';
-import { GithubSearchRepositoriesComponent } from './github-search-repositories/github-search-repositories.component';
+import { GithubSearchComponent } from './github-search/github-search.component';
+import { HomeComponent } from './home/home.component';
+
 
 const routes: Routes = [
-  {path:"github-search-profile",component:GithubSearchProfileComponent},
-  {path:"github-search-repositories",component:GithubSearchRepositoriesComponent}
+  {path:"github-search",component:GithubSearchComponent},
+  {path:"home",component:HomeComponent}
 ];
 
 @NgModule({

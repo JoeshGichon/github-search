@@ -13,6 +13,7 @@ import { GithubSearchProfilePicComponent } from './github-search-profile-pic/git
 import { GithubSearchProfileDescriptionComponent } from './github-search-profile-description/github-search-profile-description.component';
 import { GithubSearchRepositoriesComponent } from './github-search-repositories/github-search-repositories.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     GithubSearchProfilePicComponent,
     GithubSearchProfileDescriptionComponent,
     GithubSearchRepositoriesComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
