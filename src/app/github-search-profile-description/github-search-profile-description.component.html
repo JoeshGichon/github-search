@@ -23,6 +23,9 @@
                 Members Since:{{githubPrrofile.created_at|date}}
             </li>
             <li>
+                Time passed:{{githubPrrofile.created_at|pastDate}}
+            </li>
+            <li>
                 Profile URL:<a [href]="githubPrrofile.html_url" target="_blank">{{githubPrrofile.html_url}}</a>
             </li>
         </ul>

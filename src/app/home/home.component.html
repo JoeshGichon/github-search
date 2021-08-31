@@ -33,6 +33,9 @@
                         Members Since:{{myProfile.created_at|date}}
                     </li>
                     <li>
+                        Time passed:{{myProfile.created_at|pastDate}}
+                    </li>
+                    <li>
                         Profile URL:<a [href]="myProfile.html_url" target="_blank">{{myProfile.html_url}}</a>
                     </li>
                 </ul>

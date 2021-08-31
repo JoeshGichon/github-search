@@ -15,6 +15,7 @@ import { GithubSearchProfileDescriptionComponent } from './github-search-profile
 import { GithubSearchRepositoriesComponent } from './github-search-repositories/github-search-repositories.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { PastDatePipe } from './pipes/past-date.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './home/home.component';
     GithubSearchProfileDescriptionComponent,
     GithubSearchRepositoriesComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    PastDatePipe
   ],
   imports: [
     BrowserModule,
