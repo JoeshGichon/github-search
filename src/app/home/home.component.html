@@ -39,4 +39,21 @@
     </section>
 </div>
 
+<div>
+    <section *ngIf="myRepositories" class="container">
+        <div>
+            <h2>Github Repositories</h2>
+        </div>
+        <div>
+            <ul>
+                <li *ngFor="let repos of myRepositories" class="list-group-item d-flex justify-content-between">
+                    <a [href]="repos.html_url" target="_blank">Repo Name:{{repos.name}}</a>
+                    <span>stargazers_count:{{repos.stargazers_count}}</span>
+                    <span>Watchers:{{repos.watchers_count}}</span>
+                </li>
+            </ul>
+        </div>
+    </section>    
+</div>
+
 
