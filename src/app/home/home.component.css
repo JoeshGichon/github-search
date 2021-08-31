@@ -4,3 +4,12 @@ ul{
 a{
     text-decoration: none;
 }
+#stats{
+    display: inline-block;
+}
+#description{
+    margin-top: 3.8rem;
+}
+#avatar-img{
+    border-radius: 50%;
+}
