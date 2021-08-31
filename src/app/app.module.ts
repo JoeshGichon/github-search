@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 // my imported modules
 import { FormsModule } from "@angular/forms";
-import { HttpClientModule } from "@angular/common/http"
+import { HttpClientModule } from "@angular/common/http";
+import {HomeService} from "./home.service"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,7 +33,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [HomeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

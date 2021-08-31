@@ -1,1 +1,42 @@
-<p>home works!</p>
+<div *ngIf="myProfile" class="container">
+    <section  class="container">
+        <h4>User Name:{{myProfile.login}}</h4>
+    
+        <img [src]="myProfile.avatar_url">
+        <div>
+            <a [href]="myProfile.html_url" target="_blank" class="btn btn-success">View Profile</a>
+        </div>
+    </section>
+    <section class="container">
+        <div  id="stats" class="row">
+            <span>{{myProfile.followers}}Followers</span>
+            <span>{{myProfile.following}}Following</span>
+            <span>{{myProfile.public_repos}}Repositories</span>
+            <hr>
+        </div>
+        <div class="row">
+            <ul>
+                <li>
+                    User Name:{{myProfile.login}}
+                </li>
+                <li>
+                    Location:{{myProfile.location}}
+                </li>
+                <li>
+                    Email:{{myProfile.email}}
+                </li>
+                <li>
+                    Company:{{myProfile.company}}
+                </li>
+                <li>
+                    Members Since:{{myProfile.created_at|date}}
+                </li>
+                <li>
+                    Profile URL:<a [href]="myProfile.html_url" target="_blank">{{myProfile.html_url}}</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+
